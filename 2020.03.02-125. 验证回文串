@@ -1,0 +1,9 @@
+125. 验证回文串
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        s = s.lower()
+        newstr = ''
+        for i in s:
+            if i.isalnum():
+                newstr += i
+        return newstr == newstr[::-1]
